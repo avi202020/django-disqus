@@ -23,7 +23,6 @@ Result::
     
     <script type="text/javascript">
       var disqus_developer = 1;
-      var disqus_url = 'http://arthurkoziel.com/';
     </script>
 
 disqus_show_comments
@@ -46,9 +45,8 @@ Result::
 
 **Options**:
 
- - ``shortname``: DISQUS website shortname that should be used. The
-   ``settings.DISQUS_WEBSITE_SHORTNAME`` setting takes precedence
-   over this parameter. Example: ``{% disqus_show_comments "foobar" %}``
+ - ``identifier``: DISQUS identifier to be used for this comment thread.
+    By default, current URL is used as the identifier. Example: ``{% disqus_show_comments article.slug %}``
 
 disqus_num_replies
 ------------------
@@ -74,6 +72,5 @@ The javascript will then transform the link to::
 
 **Options**:
 
- - ``shortname``: DISQUS website shortname that should be used. The 
-   ``settings.DISQUS_WEBSITE_SHORTNAME`` setting takes precedence over this
-   parameter. Example: ``{% disqus_num_replies "foobar" %}``
+ - ``identifier``: DISQUS identifier to be used for this comment thread.
+    By default, current URL is used as the identifier. Example: ``{% disqus_show_comments article.slug %}``
