@@ -1,7 +1,6 @@
-*.pyc
+*.py[co]
 *.swp
-ve
-testproject
 *.egg-info
-dist/
-build/
+.*
+!.gitignore
+docs/_build
